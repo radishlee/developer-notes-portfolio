@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>开发者手记 · 作品与思考</title>
+  <meta name="description" content="把想法写成代码，把细节做成体验。一个开发者作品集的交互原型，包含精选作品、技术思考与协作方式。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="开发者手记 · 作品与思考">
+  <meta property="og:description" content="把想法写成代码，把细节做成体验。">
+  <meta property="og:image" content="assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="开发者手记 · 作品与思考">
+  <meta name="twitter:description" content="精选开发作品，和构建它们时的思考。">
+  <meta name="twitter:image" content="assets/social-preview.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <nav class="floating-nav" aria-label="主导航">
+      <a class="brand" href="#home" aria-current="page" aria-label="开发者手记，回到首页"><span class="brand-symbol" aria-hidden="true">d<span>.</span></span><span>开发者手记</span></a>
+      <div class="desktop-links"><a href="#work" class="nav-link" data-section="work">作品</a><a href="#about" class="nav-link" data-section="about">关于</a><a href="#notes" class="nav-link" data-section="notes">手记</a></div>
+      <span class="nav-separator" aria-hidden="true"></span>
+      <button class="icon-button contact-trigger" aria-label="打开联系草稿"><img src="assets/envelope-simple.svg" width="20" height="20" alt=""></button>
+      <button class="menu-toggle icon-button" aria-label="打开导航菜单" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button>
+    </nav>
+  </header>
+  <div id="mobile-menu" class="mobile-menu" hidden inert><nav aria-label="移动端导航"><a href="#work">精选作品 <span>01</span></a><a href="#about">关于与方法 <span>02</span></a><a href="#notes">开发手记 <span>03</span></a><a href="#faq">常见问题 <span>04</span></a></nav><p>做有用的东西。把细节做好。</p></div>
+  <main id="main">
+    <section id="home" class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> 思考 · 构建 · 持续打磨</p>
+        <h1 id="hero-title">把想法写成代码，<br>把细节做成体验<span class="period">。</span></h1>
+        <p class="hero-description">关注工程，也关心使用它的人。<br>这里收集动手做出的作品，以及让它们变得更好的思考。</p>
+        <a class="button button-primary" href="#work">浏览精选作品 <span aria-hidden="true">↗</span></a>
+        <p class="hero-proof"><span class="proof-mark" aria-hidden="true">↳</span> 三个交互示例，打开就能体验 <span class="demo-label">示范版</span></p>
+      </div>
+      <div class="hero-art" aria-label="由代码编辑器、设计网格与浏览器窗口组成的开发工作台插画" role="img">
+        <span class="art-label art-label-top">A LITTLE CODE. A LOT OF CARE.</span>
+        <div class="art-coordinate coordinate-top" aria-hidden="true">+</div><div class="art-coordinate coordinate-bottom" aria-hidden="true">+</div>
+        <div class="art-orbit" aria-hidden="true"></div>
+        <div class="code-window"><div class="window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>something.good.ts</span><span class="file-star">✳</span></div><div class="code-lines"><p><span>01</span><em>const</em> idea = {</p><p><span>02</span> &nbsp;purpose: <b>'make it useful'</b>,</p><p><span>03</span> &nbsp;details: <b>'make it feel right'</b>,</p><p><span>04</span> &nbsp;status: <b>'always evolving'</b></p><p><span>05</span>};</p><p><span>06</span><em>build</em>(idea);<i class="code-cursor"></i></p></div></div>
+        <div class="mini-product"><div class="mini-product-header"><span class="mini-logo">f<span>o</span>cus</span><span class="mini-product-dot"></span></div><p class="mini-product-kicker">给今天，留一点专注</p><div class="mini-product-title">Less noise.<br>More making.</div><div class="mini-task"><span class="mini-check">✓</span><span>让一个想法成为现实</span><span>↗</span></div><div class="mini-progress"><span></span></div><div class="mini-product-footer"><span>ONE THING AT A TIME</span><span>✳</span></div></div>
+        <div class="craft-stamp"><span>DESIGNED WITH</span><strong>care<span>✳</span></strong><span>BUILT TO WORK</span></div>
+        <span class="art-label art-label-bottom">IDEA → CODE → SOMETHING REAL</span>
+      </div>
+      <div class="hero-bottom"><span>代码是工具，解决问题才是目的。</span><a href="#work" aria-label="向下浏览精选作品">向下探索 <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="work" class="work-section section shell" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow section-index">01 / SELECTED WORK</p><h2 id="work-title">一些想法，已经有了形状<span>。</span></h2></div><p class="section-aside">小而完整的交互实验。<br>每一个，都可以亲手试试。</p></div>
+      <div class="project-grid">
+        <article class="project project-featured"><button class="project-open" data-project="focus" aria-label="打开 Focus 专注清单交互示例"><div class="project-art focus-art"><div class="focus-preview"><div class="preview-top"><span>focus<span class="orange-dot">.</span></span><span>今日清单 <span class="tiny-dot"></span></span></div><h3>把注意力，<br>留给重要的事。</h3><div class="preview-task done"><span>✓</span> 明确今天最重要的事 <small>完成</small></div><div class="preview-task"><span></span> 做出一个可用的原型 <small>进行中</small></div><div class="preview-task"><span></span> 留一点时间散步 <small>待开始</small></div><div class="preview-bottom"><span>少做一点，做好一点。</span><span>↗</span></div></div><span class="art-corner-label">INTERACTIVE DEMO</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><p class="project-kind">PRODUCTIVITY / WEB APP</p><h3>Focus <span>专注清单</span></h3><p>让待办回归简单，把注意力还给当下。</p></div><span class="project-number">01</span></div><div class="project-tags"><span>JavaScript</span><span>Local storage</span><span>交互设计</span></div></button></article>
+        <article class="project"><button class="project-open" data-project="palette" aria-label="打开 Palette 配色实验室交互示例"><div class="project-art palette-art"><div class="palette-preview"><span class="palette-title">a palette<br>with feeling<span>✳</span></span><div class="swatches"><span></span><span></span><span></span><span></span></div><div class="palette-caption"><span>FOREST AFTER RAIN</span><span>04 COLORS</span></div></div><span class="art-corner-label">COLOR EXPLORATION</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><p class="project-kind">DESIGN TOOL / EXPERIMENT</p><h3>Palette <span>配色实验室</span></h3><p>从一种氛围，找到一组恰好的颜色。</p></div><span class="project-number">02</span></div><div class="project-tags"><span>CSS variables</span><span>色彩系统</span></div></button></article>
+        <article class="project"><button class="project-open" data-project="snippet" aria-label="打开 Snippet 代码片段交互示例"><div class="project-art snippet-art"><div class="snippet-preview"><div class="snippet-toolbar"><span><span class="snippet-symbol">{ }</span> snippet</span><span>⌘ K</span></div><div class="snippet-search"><span>⌕</span> 找到下一行灵感<span>↵</span></div><div class="snippet-code"><p><span>const</span> smallThings = [</p><p>&nbsp; 'readable code',</p><p>&nbsp; 'thoughtful details',</p><p>&nbsp; 'a little curiosity'</p><p>];</p></div><div class="snippet-footer"><span class="tiny-dot"></span> KEEP WHAT WORKS.</div></div><span class="art-corner-label">DEVELOPER TOOL</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><p class="project-kind">DEVELOPER TOOL / WEB APP</p><h3>Snippet <span>代码片段</span></h3><p>让值得复用的代码，在需要时刚好出现。</p></div><span class="project-number">03</span></div><div class="project-tags"><span>搜索与筛选</span><span>Clipboard API</span></div></button></article>
+      </div>
+      <p class="content-note">以上为可操作的示范项目，不代表站长的真实履历或商业案例。</p>
+    </section>
+    <section id="about" class="about-section section" aria-labelledby="about-title">
+      <div class="shell">
+        <p class="eyebrow section-index">02 / A WAY OF THINKING</p>
+        <h2 id="about-title" class="tagline"><span>让复杂</span><span>留在</span><span>代码里，</span><br><span>让简单</span><span>发生在</span><span>使用时。</span></h2>
+        <div class="about-grid"><p class="about-intro">我喜欢从一个具体的问题出发，<br>做出能被真正使用的东西。<br><br>比起堆叠功能，更在意每一次点击是否自然、每一段逻辑是否清楚，以及下一次修改是否依然从容。</p><div class="principles"><article><span>01</span><div><h3>先理解问题，再选择工具</h3><p>把模糊的想法，拆成一个个能验证的小目标。</p></div></article><article><span>02</span><div><h3>界面简单，背后认真</h3><p>从信息结构到键盘操作，让细节服务于使用。</p></div></article><article><span>03</span><div><h3>交付之后，还能继续生长</h3><p>让代码可读，让边界清楚，给迭代留出空间。</p></div></article></div></div>
+        <div class="toolbox"><span>这份原型的工具箱</span><div><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span><span>Accessibility</span></div></div>
+        <p class="content-note">本节为定位与自我介绍的示范文案，发布前请替换为你的真实表达。</p>
+      </div>
+    </section>
+    <section class="process-section section shell" aria-labelledby="process-title"><div class="section-heading"><div><p class="eyebrow section-index">FROM QUESTION TO SOMETHING USEFUL</p><h2 id="process-title">把事情做好，分三步。</h2></div><p class="section-aside">尽早动手，持续验证。</p></div><div class="process-grid"><article><span class="process-number">01</span><h3>找到真正的问题</h3><p>明确给谁使用、解决什么，以及怎样才算做对。</p><span class="process-caption">UNDERSTAND</span></article><article><span class="process-number">02</span><h3>做出能用的原型</h3><p>用最小的完整体验，让想法尽早接受真实反馈。</p><span class="process-caption">BUILD</span></article><article><span class="process-number">03</span><h3>打磨值得留下的细节</h3><p>验证功能、响应速度与边界状态，然后继续迭代。</p><span class="process-caption">REFINE</span></article></div></section>
+    <section id="notes" class="notes-section section shell" aria-labelledby="notes-title"><div class="section-heading"><div><p class="eyebrow section-index">03 / NOTES ALONG THE WAY</p><h2 id="notes-title">代码之外，也留下一点思考<span>。</span></h2></div><span class="section-aside">示范短文 · 点击阅读</span></div><div class="notes-list"><button class="note-row" data-note="details"><span class="note-category">界面与体验</span><span class="note-text"><strong>一个按钮，为什么值得多想一会儿？</strong><span>从反馈、状态和键盘操作，理解那些不显眼的细节。</span></span><span class="reading-time">阅读约 2 分钟</span><span class="note-arrow" aria-hidden="true">↗</span></button><button class="note-row" data-note="small"><span class="note-category">开发与方法</span><span class="note-text"><strong>先做一个小而完整的东西</strong><span>让想法走出待办列表，从缩小第一版开始。</span></span><span class="reading-time">阅读约 2 分钟</span><span class="note-arrow" aria-hidden="true">↗</span></button><button class="note-row" data-note="code"><span class="note-category">代码与思考</span><span class="note-text"><strong>写给下一位读代码的人</strong><span>那个人，可能就是三个月后的自己。</span></span><span class="reading-time">阅读约 2 分钟</span><span class="note-arrow" aria-hidden="true">↗</span></button></div></section>
+    <section id="faq" class="faq-section section shell" aria-labelledby="faq-title"><div class="faq-intro"><p class="eyebrow section-index">A FEW THINGS TO KNOW</p><h2 id="faq-title">也许你想知道。</h2><p>关于这份作品集，<br>和你可以怎么使用它。</p></div><div class="faq-list"><details><summary>这里展示的是真实个人项目吗？<span aria-hidden="true">+</span></summary><p>当前页面是一份个人作品集设计原型。Focus、Palette 和 Snippet 都是可以操作的示范，尚未填入站长的真实经历，不代表商业交付或客户背书。</p></details><details><summary>可以直接体验这些项目吗？<span aria-hidden="true">+</span></summary><p>可以。点击项目卡片即可添加与完成待办、切换配色并复制 CSS，或搜索和复制代码片段。无需注册账号。</p></details><details><summary>页面使用了什么技术？<span aria-hidden="true">+</span></summary><p>使用 HTML、CSS 与原生 JavaScript 构建，没有框架依赖。字体随文件提供，页面支持直接打开，也可以部署到静态网站服务。</p></details><details><summary>手机和平板上可以使用吗？<span aria-hidden="true">+</span></summary><p>可以。布局会随屏幕宽度调整，手机使用全屏导航；项目演示、手记和表单均支持触屏与键盘操作。</p></details><details><summary>怎么替换成自己的内容？<span aria-hidden="true">+</span></summary><p>首页文案在 index.html，交互与手记内容在 app.js，颜色、字体和间距在 styles.css。随附说明列出了发布前需要替换的信息。</p></details><details><summary>会收集或发送我的个人数据吗？<span aria-hidden="true">+</span></summary><p>原型不接入分析、广告或表单服务。专注清单保存在当前浏览器；联系表单只生成本地草稿，不会自动发送。你可以随时清空示例清单。</p></details></div></section>
+    <section class="closing-section shell" aria-labelledby="closing-title"><p class="eyebrow section-index">GOOD THINGS START WITH CURIOSITY.</p><h2 id="closing-title">好想法，值得被做出来<span>。</span></h2><p>先看看这些小作品。也许，下一个就是我们一起做的。</p><div class="closing-actions"><a href="#work" class="button button-primary">浏览精选作品 <span aria-hidden="true">↗</span></a><button class="text-button contact-trigger">生成联系草稿 <span aria-hidden="true">↗</span></button></div><span class="closing-flower" aria-hidden="true">✳</span></section>
+  </main>
+  <footer class="site-footer shell"><div class="footer-top"><a href="#home" class="footer-brand">开发者手记<span>把细节做好。</span></a><a href="#home" class="back-to-top">回到顶部 <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span>© 2026 开发者手记 · 交互设计示范</span><div><a href="privacy.html">隐私说明</a><a href="terms.html">使用说明</a></div><span>用心设计，认真构建 <span class="footer-asterisk" aria-hidden="true">✳</span></span></div></footer>
+  <dialog id="content-dialog" class="content-dialog" aria-labelledby="dialog-title"><div class="dialog-topbar"><span id="dialog-eyebrow" class="eyebrow"></span><button class="icon-button close-dialog" aria-label="关闭窗口"><img src="assets/x.svg" width="20" height="20" alt=""></button></div><div id="dialog-content"></div></dialog>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
